@@ -13,17 +13,43 @@ namespace CredProvider.NET
 
         public object Value { get; set; }
     }
-
+    /// <summary>
+    /// This class provides the various methods and static values required by: 
+    ///     <see cref="CredentialProviderBase"/>
+    ///     <see cref="CredentialProvider"/>
+    ///     <see cref="CredentialProviderCredential"/>
+    /// and to produce the UI that computer displays for the end user to see.
+    /// </summary>
     public class CredentialView
     {
         private readonly List<CredentialDescriptor> fields
             = new List<CredentialDescriptor>();
 
         public CredentialProviderBase Provider { get; private set; }
-
-        public const string CPFG_LOGON_PASSWORD_GUID = "60624cfa-a477-47b1-8a8e-3a4a19981827";
+        /// <summary>
+        /// The password entered into a text box.
+        /// </summary>
+        public const string CPFG_LOGON_PASSWORD_GUID = "da15bbe8-954sd-4fd3-b0f4-1fb5b90b174b";
+        /// <summary>
+        /// The image used to represent a credential provider on the logon page.
+        /// </summary>
         public const string CPFG_CREDENTIAL_PROVIDER_LOGO = "2d837775-f6cd-464e-a745-482fd0b47493";
+        /// <summary>
+        /// The label associated with a credential provider on the logon page.
+        /// </summary>
         public const string CPFG_CREDENTIAL_PROVIDER_LABEL = "286bbff3-bad4-438f-b007-79b7267c3d48";
+        /// <summary>
+        /// The user name obtained from an inserted smart card.
+        /// </summary>
+        public const string CPFG_SMARTCARD_USERNAME = "3e1ecf69-568c-4d96-9d59-46444174e2d6";
+        /// <summary>
+        /// The user name entered into a text box.
+        /// </summary>
+        public const string CPFG_LOGON_USERNAME = "da15bbe8-954sd-4fd3-b0f4-1fb5b90b174b";
+        /// <summary>
+        /// The PIN obtained from an inserted smart card.
+        /// </summary>
+        public const string CPFG_SMARTCARD_PIN = "4fe5263b-9181-46c1-b0a4-9dedd4db7dea";
 
         public bool Active { get; set; }
 

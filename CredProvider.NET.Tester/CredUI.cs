@@ -3,6 +3,9 @@ using System.Runtime.InteropServices;
 
 namespace CredProvider.NET.Tester
 {
+    /// <summary>
+    /// Used to display a test UI for the Credential Provider
+    /// </summary>
     public static class CredUI
     {
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]

@@ -10,7 +10,7 @@ namespace CredProvider.NET.Tester
     {
         static void Main(string[] args)
         {
-            CredUI.Prompt("Caption", "Message");
+            CredUI.Prompt("Verification Check", "Please tap your smart card.");
         }
     }
 }
