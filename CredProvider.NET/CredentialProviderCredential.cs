@@ -13,6 +13,10 @@ namespace CredProvider.NET
 {
 
     /// <summary>
+    /// Directs Credentials to:
+    ///     WinLogin
+    ///     3P Applications (Outlook, for email Signing)
+    ///     Credential Manager (Registry or OOB Server)
     /// Exposes methods that enable the handling of a credential through <see cref="ICredentialProviderCredential"/>: 
     ///     is implemented by outside parties providing a Logon UI or Credential UI prompting for user credentials. 
     ///     Enumeration of user tiles cannot be done without an implementation of this interface.
